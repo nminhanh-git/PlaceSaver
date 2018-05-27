@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="corp.nminhanh.placesaver.EditDetailActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="#00fafafa"
+                android:src="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="#00fafafa"
+                android:gravity="center_vertical|right"
+                android:text="SAVE"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColorHint="@color/colorAccent">
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:fadingEdge="horizontal"
+                android:fadingEdgeLength="10dp"
+                android:hint="Name"
+                android:inputType=""
+                android:textColor="@color/colorAccent" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColorHint="@color/colorAccent">
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/des_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:fadingEdge="horizontal"
+                android:fadingEdgeLength="10dp"
+                android:hint="Description"
+                android:inputType=""
+                android:textColor="@color/colorAccent" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="Picture"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/item_image_edit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add_coffee"></ImageView>
+
+        <Button
+            android:id="@+id/add_picture_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Add picture"
+            android:clickable="true"/>
+    </LinearLayout>
+</LinearLayout>
